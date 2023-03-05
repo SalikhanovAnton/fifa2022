@@ -1,0 +1,127 @@
+h2{
+    text-shadow: 2px 2px 5px black;
+}
+img{
+    border: 2px solid black;
+    border-radius: 50%;
+}
+.abc{
+    display: inline-block;
+}
+span{
+    margin: 0px;
+}
+body{
+    font-family: "Quicksand";
+    padding: 30px;
+    background: #ffee00;
+    background: -webkit-linear-gradient(45deg,  #ffee009d 25%,#2989d8b7 50%,#ff32b0ad 75%);
+}
+img{
+    opacity: 0.3;
+}
+img:hover{
+    opacity: 1;
+}
+a{
+    color: black;
+}
+a:hover{
+    color: #fed098;
+}
+.textbutton{
+    width: 75px;
+    height: 60px;
+    text-transform: uppercase;
+    border: 2px solid #000;
+    background-color: rgb(46, 44, 44);
+    color: yellowgreen;
+    margin: 0px;
+}
+.textbutton:active{
+    background-color: black;
+    color: yellow;
+}
+.textinput{
+    max-width: 185px;
+    max-height: 60px;
+    margin: 0px;
+    font-size: 14;
+    height: 60px;
+}
+.txt{
+    text-transform: uppercase;
+}
+.fixed_1{
+    color: beige;
+    border: none;
+    border-radius: 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+.sticky_1{
+    position: sticky;
+    top: 0;
+}
+.absolute_1{
+    display: block;
+    background-color: aqua;
+    position: absolute;
+    top: 55;
+    right: 595;
+}
+.relative_1{
+    display: block;
+    position: relative;
+    left:  2px;
+    bottom: 0;
+}
+.one, .two{
+    display: flex;
+    margin: 5px;
+    /* align-items: flex-end; */
+}
+.a, .b, .c, .d, .e, .f, .g, .h{
+    width: 500px;
+    margin: 10px;
+    /* display: flex; */
+    /* flex-direction: column; */
+}
+.textbutton:hover{
+    animation-name: aa;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes aa{
+    0%{
+        transform: scale(0);
+        transform: rotate(0deg);
+        transform: translate3d(0px, 0px, 0px) ;
+    }
+    100%{
+        transform: scale(1.1);
+        transform: rotate(-45deg);
+        transform: translate3d(20px, 20px, 50px) ;
+        
+    }
+}
+.textinput:focus{
+    animation-name: bb;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes bb{
+    0%{
+        transform: scale(0);
+        transform: rotate(0deg);
+        transform: translate3d(0px, 0px, 0px) ;
+    }
+    100%{
+        origin: 0 0;
+        transform: scale3d(1, 1, 1, 45deg);
+        transform: rotate(-45deg);
+        transform: translate3d(20px, 20px, 50px) ;
+        
+    }
+}
